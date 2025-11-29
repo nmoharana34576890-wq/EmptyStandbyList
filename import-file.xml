@@ -3,7 +3,7 @@
   <RegistrationInfo>
     <Date>2020-02-12T09:28:47.4870319</Date>
     <Author>DESKTOP-SCM7AI1\stefan</Author>
-    <Description>dump cached ram every 1h</Description>
+    <Description>dump cached ram every 15m</Description>
     <URI>\Dump\Dump Res.Memory</URI>
   </RegistrationInfo>
   <Triggers>
@@ -16,7 +16,7 @@
     </CalendarTrigger>
     <CalendarTrigger>
       <Repetition>
-        <Interval>PT1H</Interval>
+        <Interval>PT15M</Interval>
         <Duration>P1D</Duration>
         <StopAtDurationEnd>false</StopAtDurationEnd>
       </Repetition>
