@@ -2,8 +2,8 @@
 <Task version="1.2" xmlns="http://schemas.microsoft.com/windows/2004/02/mit/task">
   <RegistrationInfo>
     <Date>2020-02-12T09:28:47.4870319</Date>
-    <Author>DESKTOP-SCM7AI1\stefan</Author>
-    <Description>dump cached ram every 1h</Description>
+    <Author>DESKTOP-76EAI2J/BIJYA</Author>
+    <Description>dump cached ram every 15m</Description>
     <URI>\Dump\Dump Res.Memory</URI>
   </RegistrationInfo>
   <Triggers>
@@ -16,7 +16,7 @@
     </CalendarTrigger>
     <CalendarTrigger>
       <Repetition>
-        <Interval>PT1H</Interval>
+        <Interval>PT15M</Interval>
         <Duration>P1D</Duration>
         <StopAtDurationEnd>false</StopAtDurationEnd>
       </Repetition>
@@ -57,6 +57,9 @@
     <Exec>
       <Command>C:\Windows\System32\EmptyStandbyList.exe</Command>
       <Arguments>standbylist</Arguments>
+      <Arguments>workingsets</Arguments>
+      <Arguments>modifiedpagelist</Arguments>
+      <Arguments>priority0standbylist</Arguments>
     </Exec>
   </Actions>
 </Task>
